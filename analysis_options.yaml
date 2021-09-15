@@ -1,7 +1,6 @@
 include: package:flutter_lints/flutter.yaml
 linter:
   rules:
-    avoid_print: true
     always_require_non_null_named_parameters: true
     always_use_package_imports: true
     avoid_type_to_string: true
@@ -43,7 +42,6 @@ linter:
     prefer_constructors_over_static_methods: true
     prefer_contains: true
     prefer_equal_for_default_values: true
-    prefer_expression_function_bodies: false
     avoid_dynamic_calls: true
     avoid_catches_without_on_clauses: true
     avoid_empty_else: true
@@ -108,6 +106,9 @@ linter:
     avoid_returning_null_for_future: true
     avoid_returning_null_for_void: true
     avoid_returning_this: true
+    avoid_print: false
+    prefer_expression_function_bodies: false
+
 
 
 
@@ -118,6 +119,6 @@ analyzer:
     - "**/*.g.dart"
     - "**/*.freezed.dart"
     - "**/injection_container.config.dart"
-  #    - "**/test.dart"
+
   errors:
     invalid_annotation_target: ignore
