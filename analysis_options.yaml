@@ -1,7 +1,7 @@
 include: package:flutter_lints/flutter.yaml
 linter:
   rules:
-    always_require_non_null_named_parameters: true
+    c: true
     always_use_package_imports: true
     avoid_type_to_string: true
     avoid_slow_async_io: true
@@ -34,7 +34,6 @@ linter:
     avoid_bool_literals_in_conditional_expressions: true
     use_string_buffers: true
     always_declare_return_types: true
-    sort_constructors_first: true
     sort_unnamed_constructors_first: true
     prefer_const_constructors: true
     prefer_const_constructors_in_immutables: true
@@ -48,7 +47,6 @@ linter:
     avoid_returning_null: true
     annotate_overrides: true
     avoid_unnecessary_containers: true
-    sort_pub_dependencies: true
     use_to_and_as_if_applicable: true
     use_rethrow_when_possible: true
     use_named_constants: true
@@ -85,7 +83,6 @@ linter:
     recursive_getters: true
     prefer_typing_uninitialized_variables: true
     prefer_spread_collections: true
-    prefer_single_quotes: true
     prefer_null_aware_operators: true
     prefer_null_aware_method_calls: true
     prefer_mixin: true
@@ -106,7 +103,12 @@ linter:
     avoid_returning_null_for_future: true
     avoid_returning_null_for_void: true
     avoid_returning_this: true
+    # Change to true if you want
     avoid_print: false
+    sort_pub_dependencies: false
+    sort_constructors_first: false
+    prefer_single_quotes: false
+
     prefer_expression_function_bodies: false
 
 
